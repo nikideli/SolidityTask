@@ -1,0 +1,161 @@
+{
+	"compiler": {
+		"version": "0.8.8+commit.dddeac2f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_productName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_quantity",
+						"type": "uint256"
+					}
+				],
+				"name": "addProduct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_prodId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_productQuantity",
+						"type": "uint256"
+					}
+				],
+				"name": "buy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_prodId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_productQuantity",
+						"type": "uint256"
+					}
+				],
+				"name": "returnProduct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_prodId",
+						"type": "uint256"
+					}
+				],
+				"name": "showClientsHistory",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "showProducts",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MyStore.sol": "MyStore"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/Strings.sol": {
+			"keccak256": "0xaf159a8b1923ad2a26d516089bceca9bdeaeacd04be50983ea00ba63070f08a3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6f2cf1c531122bc7ca96b8c8db6a60deae60441e5223065e792553d4849b5638",
+				"dweb:/ipfs/QmPBdJmBBABMDCfyDjCbdxgiqRavgiSL88SYPGibgbPas9"
+			]
+		},
+		"contracts/MyStore.sol": {
+			"keccak256": "0xc6c27c4f2cbca91d4273df0a6cdc2cea79a2b1939465ddb21b23394354f7fc18",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://94b2e3cefdd58c015bcc08f55d1919c1addfdaae3bfd738533bfae791e7b2e28",
+				"dweb:/ipfs/QmNSeJPi6siwQDZVYvRC9R4Ca5RiB62w8SQQAqRHz9S7Jn"
+			]
+		},
+		"contracts/Ownable.sol": {
+			"keccak256": "0x30bfd6a9054e6d5057c4fa2cfd62ced69d2e563c9c66799f7b895833382b7f4e",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://ed58c5343f8174a0dc91839967e69af81369b86a884472ab277b953a28e5c73a",
+				"dweb:/ipfs/Qmd3u12UH7KCGgCL9woSD5p2UJXLpuLJ8sHLLcL4bmvKLP"
+			]
+		}
+	},
+	"version": 1
+}

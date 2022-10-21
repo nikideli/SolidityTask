@@ -59,17 +59,17 @@ contract MyStore is Ownable {
     }
 
     function addClientToHistory(address _clientAddress, uint _prodId) private {
-        bool alreadyExist;
+        bool alreadyExists;
         for (uint i = 0 ; i < clientsHistory[_prodId].length; i++)
         {
             if (clientsHistory[_prodId][i] == _clientAddress)
             {
-                alreadyExist = true;
+                alreadyExists = true;
                 break;
             }
         }
 
-        if (!alreadyExist)
+        if (!alreadyExists)
         {
             clientsHistory[_prodId].push(_clientAddress);
         }
@@ -81,7 +81,6 @@ contract MyStore is Ownable {
         require(_prodId <= productCount, "No such product!");
         require(clients[msg.sender].productsBought[_prodId].quantity == 0, "Already bought!");
         require(productsLedger[_prodId].quantity >= _productQuantity, "There is not enough quantity in the store!");
-        
         
         productsLedger[_prodId].quantity -= _productQuantity;
         if (clients[msg.sender].clientAddress != msg.sender)
