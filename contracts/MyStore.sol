@@ -51,7 +51,7 @@ contract MyStore is Ownable {
         {
             if (productsLedger[i + 1].quantity > 0)
             {
-                ret[arrayIndex] = string(abi.encodePacked(Strings.toString(i + 1), ". ", productsLedger[i+1].name, ": ", Strings.toString(productsLedger[i + 1].quantity)));
+                ret[arrayIndex] = string(abi.encodePacked(Strings.toString(i + 1), ". ", productsLedger[i + 1].name, ": ", Strings.toString(productsLedger[i + 1].quantity)));
                 arrayIndex++;
             }
         }

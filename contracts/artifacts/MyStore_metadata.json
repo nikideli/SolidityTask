@@ -141,11 +141,11 @@
 			]
 		},
 		"contracts/MyStore.sol": {
-			"keccak256": "0xc6c27c4f2cbca91d4273df0a6cdc2cea79a2b1939465ddb21b23394354f7fc18",
+			"keccak256": "0x279c308ff16f211348e15ab5c2b13364b3007cec982850ec0c352ee58eef5291",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://94b2e3cefdd58c015bcc08f55d1919c1addfdaae3bfd738533bfae791e7b2e28",
-				"dweb:/ipfs/QmNSeJPi6siwQDZVYvRC9R4Ca5RiB62w8SQQAqRHz9S7Jn"
+				"bzz-raw://6e617a8df1d544be139057e45a5f6ac367eece8217a5b5e79308bd88673581b0",
+				"dweb:/ipfs/QmUsEFKuUVmLHTpuHtSj1U8Lxmo5N7SEDjRT5mZchTkHyR"
 			]
 		},
 		"contracts/Ownable.sol": {
